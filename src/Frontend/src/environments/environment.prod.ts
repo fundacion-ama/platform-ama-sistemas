@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  serverAma: 'https://api-ama.xcode.ec/',
+  serverAma: 'http://54.164.16.169/',
   enName: 'PRODUCTION',
 };
