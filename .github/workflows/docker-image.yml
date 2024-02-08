@@ -28,6 +28,6 @@ jobs:
     - name: Build and Push Frontend Image
       run: |
         IMAGE_TAG=$(date '+%Y%m%d%H%M%S')
-        docker build -t wechavez14/platform-ama:frontend-latest -t wechavez14/platform-ama:frontend-$IMAGE_TAG -f src/Frontend/Dockerfile.frontend .
+        docker build -t wechavez14/platform-ama:frontend-latest -t wechavez14/platform-ama:frontend-$IMAGE_TAG -f src/Frontend/Dockerfile.frontend . --platform linux/amd64
         docker push wechavez14/platform-ama:frontend-latest
         docker push wechavez14/platform-ama:frontend-$IMAGE_TAG

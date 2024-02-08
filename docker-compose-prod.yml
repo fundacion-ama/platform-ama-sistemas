@@ -22,7 +22,7 @@ services:
     container_name: back
     restart: always
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      ASPNETCORE_ENVIRONMENT: Production
     ports:
       - '7130:7130'
     depends_on:
@@ -40,12 +40,9 @@ services:
       - backend  
     networks:
       - my-network  
-    #volumes:
-    #  - front:/etc/nginx/conf.d
 
 networks:
   my-network:
 
 volumes:
   mariadb_data:
-  #front:
