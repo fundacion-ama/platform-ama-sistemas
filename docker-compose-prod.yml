@@ -18,7 +18,7 @@ services:
       - my-network
 
   backend:
-    image: wechavez14/platform-ama:backend-latest
+    image: fundama/full-platform:backend-latest
     container_name: back
     restart: always
     environment:
@@ -31,7 +31,7 @@ services:
       - my-network
  
   frontend:
-    image: wechavez14/platform-ama:frontend-latest
+    image: fundama/full-platform:frontend-latest
     container_name: front
     restart: always
     ports:
